@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bottom_nav"
+    app:startDestination="@id/gamesListFragment">
+
+    <fragment
+        android:id="@+id/gamesListFragment"
+        android:name="com.example.testtaskrocket.presentation.gamesList.GamesListFragment"
+        android:label="GamesListFragment"
+        tools:layout="@layout/fragment_games_list" >
+        <action
+
+            android:id="@+id/action_gamesListFragment_to_gameDetailsFragment"
+            app:destination="@id/gameDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameDetailsFragment"
+        android:name="com.example.testtaskrocket.presentation.gameDetails.GameDetailsFragment"
+        android:label="AccessoriesListFragment"
+        tools:layout="@layout/fragment_game_details">
+    </fragment>
+</navigation>
